@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "api/*.php": { "runtime": "vercel-php@0.6.0" },
+    "*.php": { "runtime": "vercel-php@0.6.0" }
+  },
+  "routes": [
+    { "src": "/public/(.*)", "dest": "/public/$1" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ],
+  "env": {
+    "DB_HOST": "host_database_kamu",
+    "DB_USER": "user_database_kamu",
+    "DB_PASS": "password_database_kamu",
+    "DB_NAME": "nama_database_kamu"
+  }
+}

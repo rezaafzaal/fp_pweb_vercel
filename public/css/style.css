@@ -1,0 +1,97 @@
+/* public/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+    --bg-warm: #FAF9F6;       /* Off-white kertas */
+    --primary-brown: #8D6E63; /* Warna Mocha/Kopi */
+    --secondary-beige: #D7CCC8;
+    --accent-sage: #AED581;   /* Hijau lembut */
+    --accent-clay: #E57373;   /* Merah lembut */
+    --text-dark: #4E342E;
+    --card-shadow: 0 4px 20px rgba(141, 110, 99, 0.1);
+}
+
+body {
+    background-color: var(--bg-warm);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5, .brand-font {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* Custom Card Studygram Style */
+.card-custom {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-3px);
+}
+
+/* Urgency Badges */
+.badge-urgency-high {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+.badge-urgency-medium {
+    background-color: #fff8e1;
+    color: #f57f17;
+    border: 1px solid #ffe082;
+}
+.badge-urgency-low {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+/* Form Inputs */
+.form-control {
+    background-color: #fcfcfc;
+    border: 2px solid #efebe9;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: var(--text-dark);
+}
+
+.form-control:focus {
+    border-color: var(--primary-brown);
+    box-shadow: 0 0 0 0.2rem rgba(141, 110, 99, 0.25);
+}
+
+/* Buttons */
+.btn-primary-custom {
+    background-color: var(--primary-brown);
+    border-color: var(--primary-brown);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-weight: 500;
+}
+
+.btn-primary-custom:hover {
+    background-color: #6D4C41;
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary-brown) !important;
+}
+
+.nav-pills .nav-link {
+    color: var(--primary-brown);
+}
+
+/* Checklist Animation */
+.task-done-text {
+    text-decoration: line-through;
+    color: #bdbdbd;
+}
