@@ -176,3 +176,4 @@ $done_tasks = $stmt->fetchAll();
 </script>
 
 <?php require_once 'includes/footer.php'; ?>
+
